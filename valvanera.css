@@ -1,0 +1,206 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f8ec;
+  margin: 0;
+  color: #333;
+}
+footer img{
+  width:100% ;
+  height:80px ;
+  background-image:100%;
+}
+/* Menú */
+/* 🌿 MENÚ */
+/* Menú */
+/* 🌿 MENÚ */
+/* Menú */
+.menu {
+  background-color: #3b5e2b;
+  color: white;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 4px;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #ffeb7b;
+}
+
+/* Submenú */
+.submenu {
+  position: relative;
+}
+.submenu-list {
+  display: none;
+  position: absolute;
+  background-color: #4f7034;
+  border-radius: 8px;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 10px 0;
+}
+.submenu:hover .submenu-list {
+  display: block;
+}
+.submenu-list li {
+  padding: 8px 20px;
+}
+.submenu-list a {
+  color: #fff;
+}
+.submenu-list a:hover {
+  background-color: #5f8a3d;
+}
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 45px;
+  background: #d9e8c9;
+  border-bottom: 4px solid #3a5b2e;
+}
+
+/* CONTENIDO */
+.contenido { padding: 30px; }
+.bloque {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border-left: 8px solid #3a5b2e;
+}
+
+
+.texto { width: 60%; }
+
+.imagen {
+  width: 320px;
+  background: #e3efd8;
+  border: 2px dashed #3a5b2e;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  
+}
+.imagen img {
+  width: 300px;
+  background: #e3efd8;
+  border: 2px dashed #3a5b2e;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sitios li { margin-bottom: 10px; }
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+  .menu-items { display: none; flex-direction: column; }
+  .menu-items.show { display: flex; }
+  .menu-toggle { display: block; }
+  .bloque { flex-direction: column; }
+  .texto, .imagen { width: 100%; }
+}
+/* 🌿 Estilo suave y natural */
+body {
+  background-color: #f5f8ef;
+  color: #3a3a3a;
+}
+
+/* ✨ Animación suave de desvanecer */
+.fade-in {
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* 🎐 Hero más orgánico */
+.hero {
+  background: linear-gradient(to bottom, #dfe9d3, #c5d9b1);
+  border-bottom: 5px solid #3a5b2e;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* 🗺️ Contenedor del mapa */
+.mapa-container {
+  text-align: center;
+  margin: 30px auto;
+  padding: 20px;
+  background: #eaf3dd;
+  border-left: 8px solid #3a5b2e;
+  border-radius: 12px;
+  animation: fadeIn 1.6s ease-in-out;
+}
+
+.mapa-container h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2f4b24;
+}
+
+/* 🗺️ Mapa integrado */
+.mapa {
+  width: 90%;
+  height: 350px;
+  border: 3px solid #3a5b2e;
+  border-radius: 12px;
+  filter: brightness(0.95);
+  transition: filter 0.4s ease;
+}
+
+.mapa:hover {
+  filter: brightness(1.05);
+}
+
+/* 🍃 Transición suave de elementos */
+.bloque, .imagen, .texto, .sitios li {
+  transition: transform 0.4s ease, background 0.4s ease;
+}
+
+.bloque:hover {
+  transform: translateY(-4px);
+}
+footer {
+  background-color: #3b5e2b;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
