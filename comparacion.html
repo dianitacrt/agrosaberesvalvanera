@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnicas Agrícolas: Ancestrales vs Contemporáneas</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Encabezado y navegación */
+        header {
+            background: linear-gradient(to right, #2e7d32, #4caf50);
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-left: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #c8e6c9;
+        }
+
+        /* Secciones principales */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: #e8f5e9;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1b5e20;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Secciones de comparación */
+        .comparison-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #1b5e20;
+            border-bottom: 2px solid #4caf50;
+            padding-bottom: 0.5rem;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #2e7d32;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 0.5rem;
+        }
+
+        .card-content {
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        .card-content::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .card-content::-webkit-scrollbar-thumb {
+            background-color: #4caf50;
+            border-radius: 5px;
+        }
+
+        .image-placeholder {
+            background-color: #e0e0e0;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            margin: 1rem 0;
+            color: #757575;
+            font-style: italic;
+        }
+
+        /* Tablas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        th {
+            background-color: #e8f5e9;
+            color: #1b5e20;
+        }
+
+        /* Listas */
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Citas y recuadros */
+        blockquote {
+            background-color: #f1f8e9;
+            border-left: 4px solid #4caf50;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+
+        .highlight-box {
+            background-color: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            border-radius: 5px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .comparison-section {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav li {
+                margin: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Técnicas Agrícolas Comparadas</div>
+            <nav>
+                <ul>
+                    <li><a href="#introduccion">Introducción</a></li>
+                    <li><a href="#tecnicas-ancestrales">Técnicas Ancestrales</a></li>
+                    <li><a href="#tecnicas-contemporaneas">Técnicas Contemporáneas</a></li>
+                    <li><a href="#comparacion">Comparación</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Sabiduría Agrícola: Ancestral vs Contemporánea</h1>
+            <p>Un análisis comparativo de las técnicas agrícolas tradicionales Muisca y las prácticas sostenibles modernas implementadas en el Resguardo de Fonquetá y Cerca de Piedra.</p>
+        </section>
+
+        <section id="introduccion">
+            <h2 class="section-title">Introducción</h2>
+            <div class="card">
+                <h3>Contexto Histórico y Cultural</h3>
+                <div class="card-content">
+                    <p>La comunidad Muisca del Resguardo de Fonquetá y Cerca de Piedra ha desarrollado un proceso de adaptación que combina prácticas ancestrales con técnicas contemporáneas, buscando la transición hacia sistemas agroecológicos que fortalezcan su autonomía alimentaria y preserven su identidad indígena.</p>
+                    
+                    <div class="image-placeholder">
+                        [Imagen: Comunidad Muisca trabajando la tierra]
+                    </div>
+                    
+                    <p>Esta comparación explora cómo estas dos tradiciones agrícolas, separadas por siglos pero unidas por un propósito común de sostenibilidad, coexisten y se complementan en la actualidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnicas-ancestrales">
+            <h2 class="section-title">Técnicas Ancestrales Muiscas</h2>
+            
+            <div class="comparison-section">
+                <div class="card">
+                    <h3>Sabiduría Agrícola Ancestral Muisca</h3>
+                    <div class="card-content">
+                        <h4>Técnicas milenarias que aún alimentan a nuestra comunidad</h4>
+                        <p>Nuestros ancestros desarrollaron técnicas agrícolas sofisticadas que les permitieron vivir en armonía con la tierra durante siglos. Estos conocimientos se han transmitido de generación en generación, adaptándose a los cambios pero manteniendo su esencia.</p>
+                        
+                        <blockquote>
+                            "Igual como ellos nos enseñaron. Arreglando la tierra, cómo se echa el abono, como se echa la semilla, como se tapa, como se deshierba, como se corta, los surcos, que sembramos en sementeras... Nosotros lo hacemos, así como nos enseñaron nuestros padres"
+                        </blockquote>
+                        
+                        <div class="highlight-box">
+                            <strong>🌾 Conocimiento Vivo</strong>
+                            <p>Estas prácticas no son solo técnicas agrícolas, son parte de nuestra identidad como pueblo Muisca. A través de ellas mantenemos la conexión con nuestros ancestros y con la Madre Tierra (Jicha).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Las Terrazas Muiscas</h3>
+                    <div class="card-content">
+                        <h4>Cultivando en las laderas de la montaña</h4>
+                        
+                        <h5>¿Qué son las Terrazas?</h5>
+                        <p>Las terrazas son modificaciones del terreno que nuestros ancestros crearon para poder cultivar en las laderas inclinadas de las montañas. Son como escalones o niveles construidos en la pendiente, que convierten un terreno difícil en espacios productivos.</p>
+                        
+                        <div class="image-placeholder">
+                            [Imagen: Terrazas agrícolas en ladera]
+                        </div>
+                        
+                        <p><strong>Definición técnica:</strong> Plataformas horizontales construidas en serie sobre una ladera, sostenidas por muros o taludes, que permiten el cultivo en terrenos con pendiente.</p>
+                        
+                        <h5>Origen y Antigüedad</h5>
+                        <p>Esta práctica es milenaria en nuestro territorio. Desde tiempos precolombinos, los Muiscas construyeron terrazas en:</p>
+                        <ul>
+                            <li>Los bordes de los valles fríos</li>
+                            <li>Las sierras que recibían gran cantidad de humedad</li>
+                            <li>Laderas con inclinaciones entre 45° y 75°</li>
+                        </ul>
+                        
+                        <h5>¿Por qué las desarrollaron?</h5>
+                        <p>El territorio del altiplano tiene muchas zonas montañosas. Nuestros ancestros, en su sabiduría, entendieron que no podían desperdiciar estas tierras, así que inventaron una forma de hacerlas productivas.</p>
+                        
+                        <h5>Características de las Terrazas Ancestrales</h5>
+                        <p><strong>Materiales Tradicionales:</strong></p>
+                        <ul>
+                            <li>🪨 Piedra: Para muros de contención en terrazas permanentes</li>
+                            <li>🌳 Madera: Troncos y ramas para estructuras temporales</li>
+                            <li>🌱 Tierra compactada: Para formar los taludes</li>
+                            <li>🌿 Vegetación: Plantas que ayudan a fijar la tierra</li>
+                        </ul>
+                        
+                        <p><strong>Estructura:</strong></p>
+                        <ul>
+                            <li>Muro o talud de contención: Sostiene la tierra del nivel superior</li>
+                            <li>Plataforma horizontal: Superficie plana donde se cultiva</li>
+                            <li>Sistema de drenaje: Permite el flujo controlado del agua</li>
+                            <li>Escaleras o caminos: Para acceder a cada nivel</li>
+                        </ul>
+                        
+                        <h5>Beneficios de las Terrazas</h5>
+                        <ul>
+                            <li>🛡️ Protección del Suelo: Evitan que la lluvia arrastre la tierra (erosión)</li>
+                            <li>💧 Manejo del Agua: Controlan el flujo del agua de lluvia</li>
+                            <li>🌾 Aprovechamiento del Territorio: Convierten terrenos "no cultivables" en productivos</li>
+                            <li>🌡️ Microclimas: Cada nivel puede tener condiciones ligeramente diferentes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Camellones</h3>
+                    <div class="card-content">
+                        <h5>¿Qué son los Camellones?</h5>
+                        <p>Los camellones son plataformas elevadas de tierra construidas para cultivar en zonas inundables o muy húmedas. Son montículos alargados separados por canales que manejan el agua.</p>
+                        
+                        <div class="image-placeholder">
+                            [Imagen: Sistema de camellones]
+                        </div>
+                        
+                        <p><strong>Contexto histórico:</strong> En tiempos prehispánicos, el altiplano Cundiboyacense tenía:</p>
+                        <ul>
+                            <li>Numerosas lagunas y humedales</li>
+                            <li>Zonas que se inundaban frecuentemente</li>
+                            <li>Ríos con crecientes estacionales</li>
+                        </ul>
+                        
+                        <p>Nuestros ancestros no vieron esto como un problema, sino como una oportunidad. Desarrollaron los camellones como solución ingeniosa.</p>
+                        
+                        <h5>Estructura de los Camellones Ancestrales</h5>
+                        <p><strong>Componentes principales:</strong></p>
+                        <ul>
+                            <li>Plataforma elevada (el camellón propiamente)</li>
+                            <li>Canales entre camellones</li>
+                            <li>Capa fértil superior</li>
+                        </ul>
+                        
+                        <h5>¿Cómo Funcionaban?</h5>
+                        <p><strong>🌊 Manejo del Agua:</strong></p>
+                        <ul>
+                            <li>En época de lluvias: El agua se acumula en los canales</li>
+                            <li>En época seca: El agua de los canales mantiene humedad</li>
+                        </ul>
+                        
+                        <h5>Beneficios Múltiples</h5>
+                        <ul>
+                            <li>🌾 Agrícolas: Cultivo en zonas que serían improductivas</li>
+                            <li>🐟 Complementarios: En los canales se podían criar peces</li>
+                            <li>🌿 Ecológicos: Regulación natural de inundaciones</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>El Tiempo Muisca</h3>
+                    <div class="card-content">
+                        <h4>Vivir según los ciclos de la naturaleza</h4>
+                        
+                        <h5>Introducción</h5>
+                        <p>Para el pueblo Muisca, el tiempo no era lineal como lo entiende el mundo occidental. Era cíclico, basado en la observación de la naturaleza y los astros. Nuestros ancestros desarrollaron un profundo conocimiento de los ciclos naturales que les permitía saber cuándo sembrar, cuándo cosechar, y cuándo realizar ceremonias.</p>
+                        
+                        <div class="highlight-box">
+                            <strong>🌙 La Cosmovisión del Tiempo</strong>
+                            <p>"Todo es un ciclo que se repite: nacimiento, crecimiento, muerte y renacimiento. Así como la luna crece y mengua, así como las estaciones van y vienen, así es el tiempo de la siembra y la cosecha."</p>
+                        </div>
+                        
+                        <h5>Elementos del Calendario Ancestral</h5>
+                        <p>Nuestros ancestros observaban y registraban:</p>
+                        <ul>
+                            <li>☀️ El Sol (Sué): Solsticios, equinoccios, posición del sol</li>
+                            <li>🌙 La Luna (Chía): Fases lunares, ciclos menstruales</li>
+                            <li>⭐ Las Estrellas: Constelaciones visibles en diferentes épocas</li>
+                            <li>🌧️ Las Lluvias: Épocas de lluvia y sequía</li>
+                            <li>🌡️ Las Temperaturas: Heladas, vientos, cambios estacionales</li>
+                        </ul>
+                        
+                        <h5>El Año Muisca</h5>
+                        <p><strong>Estructura del calendario:</strong> El año Muisca se dividía en ciclos relacionados con las actividades agrícolas y ceremoniales:</p>
+                        <ul>
+                            <li>Número de "meses" o períodos: Reconocían ciclos que se alineaban con las lunas y las temporadas</li>
+                            <li>Ciclos de Cultivo Principales: Maíz y papa como cultivos estructuradores</li>
+                        </ul>
+                        
+                        <h5>El Calendario Lunar</h5>
+                        <p>La Luna (Chía) era fundamental para determinar los momentos de siembra, poda, cosecha y otras actividades agrícolas. Este conocimiento aún pervive en muchas familias del resguardo.</p>
+                        
+                        <blockquote>
+                            "En menguante yo apodo y me da más fruto. Mientras hay gente que dice que en la creciente, pero yo no, la creciente se va, es crece. Mientras que la menguante no crece tanto y bota fruto"
+                        </blockquote>
+                        
+                        <h5>Las Cuatro Fases y sus Usos</h5>
+                        <ul>
+                            <li>🌑 LUNA NUEVA: Preparación de la tierra, limpieza del terreno</li>
+                            <li>🌒 LUNA CRECIENTE: Siembra de cultivos de fruto y hortalizas de hoja</li>
+                            <li>🌕 LUNA LLENA: Cosecha de hierbas medicinales y frutos</li>
+                            <li>🌘 LUNA MENGUANTE: Siembra de tubérculos y raíces, poda, abonado</li>
+                        </ul>
+                        
+                        <h5>Tabla Resumen: Calendario Lunar Agrícola</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Fase Lunar</th>
+                                    <th>Sembrar</th>
+                                    <th>Cosechar</th>
+                                    <th>Podar</th>
+                                    <th>Abonar</th>
+                                    <th>Otros</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>🌑 Nueva</td>
+                                    <td>❌ Nada importante</td>
+                                    <td>❌</td>
+                                    <td>❌</td>
+                                    <td>✓ Preparar tierra</td>
+                                    <td>Limpiar, planificar</td>
+                                </tr>
+                                <tr>
+                                    <td>🌒 Creciente</td>
+                                    <td>✓ Frutos y hojas</td>
+                                    <td>✓ Hojas</td>
+                                    <td>❌</td>
+                                    <td>❌</td>
+                                    <td>✓ Riego abundante, injertos</td>
+                                </tr>
+                                <tr>
+                                    <td>🌕 Llena</td>
+                                    <td>✓ Últimos días</td>
+                                    <td>✓ Frutos y medicinas</td>
+                                    <td>❌</td>
+                                    <td>❌</td>
+                                    <td>✓ Ceremonias, recolectar semillas</td>
+                                </tr>
+                                <tr>
+                                    <td>🌘 Menguante</td>
+                                    <td>✓ Raíces y tubérculos</td>
+                                    <td>✓ Tubérculos</td>
+                                    <td>✓✓ Mejor momento</td>
+                                    <td>✓✓✓</td>
+                                    <td>✓ Cortar madera, control plagas</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h5>El Calendario Solar y las Estaciones</h5>
+                        <p>En el altiplano Cundiboyacense no hay cuatro estaciones marcadas como en zonas templadas, pero sí dos períodos claramente diferenciados:</p>
+                        
+                        <p><strong>🌧️ ÉPOCA DE LLUVIAS</strong></p>
+                        <ul>
+                            <li>Cuándo: Abril-Mayo y Octubre-Noviembre</li>
+                            <li>Características: Lluvias frecuentes y abundantes</li>
+                            <li>Actividades: Siembra principal de la mayoría de cultivos</li>
+                        </ul>
+                        
+                        <p><strong>☀️ ÉPOCA SECA (Verano)</strong></p>
+                        <ul>
+                            <li>Cuándo: Diciembre-Marzo y Junio-Septiembre</li>
+                            <li>Características: Pocas o ninguna lluvia</li>
+                            <li>Actividades: Cosecha principal de cultivos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnicas-contemporaneas">
+            <h2 class="section-title">Técnicas Contemporáneas de Agricultura Sostenible</h2>
+            
+            <div class="comparison-section">
+                <div class="card">
+                    <h3>Introducción</h3>
+                    <div class="card-content">
+                        <p>La comunidad Muisca del Resguardo de Fonquetá y Cerca de Piedra ha desarrollado un proceso de adaptación que combina prácticas ancestrales con técnicas contemporáneas, buscando la transición hacia sistemas agroecológicos que fortalezcan su autonomía alimentaria y preserven su identidad indígena.</p>
+                        
+                        <div class="image-placeholder">
+                            [Imagen: Agricultura sostenible moderna]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Principios de la Agricultura Sostenible en el Resguardo</h3>
+                    <div class="card-content">
+                        <h4>Producción Limpia</h4>
+                        <p>Las familias agricultoras priorizan el cultivo de alimentos libres de agroquímicos, garantizando alimentos frescos y saludables para el autoconsumo.</p>
+                        
+                        <h4>Policultivos y Agrobiodiversidad</h4>
+                        <p>Se mantiene una riqueza en agrobiodiversidad con un promedio de 27 especies cultivadas por familia, incluyendo hierbas aromáticas-medicinales, frutales, hortalizas, tubérculos, legumbres y cereales.</p>
+                        
+                        <h4>Conservación de Especies Nativas</h4>
+                        <p>Preservación de semillas ancestrales custodiadas durante siglos, como diferentes variedades de papa, maíz, cubios, chuguas, hibias, yacón y arracacha.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Prácticas Sostenibles Implementadas</h3>
+                    <div class="card-content">
+                        <h4>Sistemas de Terrazas</h4>
+                        <p>Modificación del terreno para la siembra en pendientes, reduciendo la erosión y protegiendo los cultivos. Esta práctica ancestral se mantiene vigente adaptándose a las condiciones actuales del territorio.</p>
+                        
+                        <h4>Asociación de Cultivos</h4>
+                        <p>Mantenimiento de la asociación milenaria maíz-frijol, que permite mejor oxigenación del terreno y defensa contra malezas y plagas.</p>
+                        
+                        <h4>Uso de Invernaderos</h4>
+                        <p>Implementación de estructuras que permiten controlar condiciones climáticas adversas (vientos, lluvias, temperatura) y proteger los cultivos de plagas y enfermedades, optimizando el uso del agua.</p>
+                        
+                        <h4>Cultivo en Contenedores</h4>
+                        <p>Estrategia para controlar la cantidad de agua y condiciones ambientales a las que están expuestas las plantas, especialmente útil en zonas con variabilidad climática.</p>
+                        
+                        <h4>Reforestación con Especies Nativas</h4>
+                        <p>Eliminación progresiva de especies foráneas (eucaliptos, pinos) y siembra de especies nativas como el chilco, que contribuye a la generación del colchón hídrico y retención de agua.</p>
+                        
+                        <h4>Calendario Lunar</h4>
+                        <p>Algunas familias mantienen el uso del calendario lunar para actividades agrícolas, realizando en fase menguante el abonado y la poda para obtener mayor producción de frutos.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Abonos Orgánicos Actualizados</h3>
+                    <div class="card-content">
+                        <h4>Filosofía de la Fertilización Orgánica</h4>
+                        <p>La comunidad ha desarrollado conciencia sobre los daños que generan los agroquímicos tanto a la salud como al medio ambiente, promoviendo la producción limpia como elemento fundamental de su identidad y autonomía alimentaria.</p>
+                        
+                        <h4>Tipos de Abonos Orgánicos Producidos</h4>
+                        
+                        <h5>1. Compostaje</h5>
+                        <p><strong>Insumos utilizados:</strong> Ceniza, hollejos de papa, cáscaras de zanahoria, desechos vegetales, restos de plantas, cáscaras de huevo.</p>
+                        <p><strong>Proceso:</strong> Acumulación y descomposición de materia orgánica vegetal para obtener nutrientes para la tierra.</p>
+                        
+                        <h5>2. Gallinaza</h5>
+                        <p><strong>Fuente:</strong> Estiércol de gallinas ponedoras criadas en las adjudicaciones.</p>
+                        <p><strong>Uso:</strong> Fertilización directa de cultivos, especialmente hortalizas y aromáticas.</p>
+                        
+                        <h5>3. Lombricultivo</h5>
+                        <p><strong>Implementación:</strong> Sistema de producción de humus de lombriz mediante la cría controlada de lombrices rojas.</p>
+                        <p><strong>Beneficios:</strong> Producción de abono de alta calidad con excelentes propiedades para mejorar la estructura y fertilidad del suelo.</p>
+                        
+                        <h5>4. Estiércol de Conejo</h5>
+                        <p><strong>Fuente:</strong> Cría de conejos en algunas adjudicaciones.</p>
+                        <p><strong>Ventaja:</strong> Alto contenido de nitrógeno y fácil descomposición.</p>
+                        
+                        <h5>5. Cascarilla de Arroz</h5>
+                        <p><strong>Función:</strong> Mejorar la oxigenación y retención de humedad en la tierra.</p>
+                        <p><strong>Aplicación:</strong> Mezclada con otros componentes orgánicos en la preparación de abonos compuestos.</p>
+                        
+                        <h4>Transformación Histórica</h4>
+                        <p>En décadas anteriores (años 60) se utilizaba principalmente estiércol de vaca y caña de maíz. La adaptación actual responde a la transformación del territorio, donde la tenencia de ganado en las adjudicaciones es prácticamente nula, llevando a la diversificación de fuentes orgánicas.</p>
+                        
+                        <h4>Recomendaciones Técnicas</h4>
+                        <ul>
+                            <li>Fortalecer las técnicas de elaboración de compost mediante asistencia técnica agropecuaria.</li>
+                            <li>Promover el intercambio de conocimientos entre familias sobre mejores prácticas de fertilización orgánica.</li>
+                            <li>Desarrollar sistemas de producción a mayor escala para satisfacer las necesidades de las familias agricultoras.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Control Biológico de Plagas</h3>
+                    <div class="card-content">
+                        <h4>Enfoque Ancestral y Contemporáneo</h4>
+                        <p>El control de plagas en el resguardo se basa en conocimientos tradicionales transmitidos generacionalmente, combinados con prácticas agroecológicas contemporáneas que respetan el equilibrio del ecosistema.</p>
+                        
+                        <h4>Preparados de Extractos Naturales</h4>
+                        <p>La comunidad identifica la elaboración de extractos naturales como una práctica tradicional fundamental para combatir plagas y enfermedades en los cultivos.</p>
+                        
+                        <h5>1. Extracto de Ají Rocote</h5>
+                        <p><strong>Preparación:</strong> Machacar el ají rocote para extraer su jugo y aplicarlo directamente a las plantas.</p>
+                        <p><strong>Variante:</strong> Mezclar con limón mediante licuado o hervido, dejar enfriar al menos un día antes de aplicar.</p>
+                        <p><strong>Usos:</strong> Control de insectos masticadores y chupadores.</p>
+                        <p><strong>Nota histórica:</strong> El ají ha sido resignificado; en el pasado prehispánico se consideraba el mejor condimento culinario, mientras que hoy se utiliza principalmente con fines ecológicos para el manejo de plagas.</p>
+                        
+                        <h5>2. Mezcla de Ajo con Ruda</h5>
+                        <p><strong>Componentes:</strong> Ajo nacional y hojas de ruda.</p>
+                        <p><strong>Aplicación:</strong> Control de diversas plagas y como repelente natural.</p>
+                        <p><strong>Beneficios adicionales:</strong> Propiedades fungicidas y bactericidas.</p>
+                        
+                        <h5>3. Extracto de Ortiga</h5>
+                        <p><strong>Preparación:</strong> Infusión de hojas de ortiga.</p>
+                        <p><strong>Usos:</strong> Fortalecimiento de plantas y control preventivo de plagas.</p>
+                        
+                        <h4>Prácticas de Manejo Integrado</h4>
+                        
+                        <h5>1. Control Cultural</h5>
+                        <p><strong>Asociación de cultivos:</strong> La siembra intercalada de diferentes especies (maíz-frijol-haba) confunde a las plagas y reduce su incidencia.</p>
+                        <p><strong>Rotación de cultivos:</strong> Práctica que previene la acumulación de poblaciones de plagas específicas.</p>
+                        
+                        <h5>2. Control Mecánico</h5>
+                        <p><strong>Uso de espantapájaros:</strong> Elaborados con materiales reciclados para evitar el daño de cultivos de arvejas y frutales por parte de aves.</p>
+                        <p><strong>Recolección manual:</strong> De la chiza al momento del deshierbe, que posteriormente se utiliza como alimento para las gallinas, cerrando el ciclo de forma sostenible.</p>
+                        
+                        <h5>3. Diversificación y Plantas Repelentes</h5>
+                        <p><strong>Hierbas aromáticas:</strong> El cultivo de al menos 32 especies diferentes de hierbas aromáticas-medicinales (romero, ruda, ajenjo, albahaca, caléndula, entre otras) actúa como repelente natural de plagas.</p>
+                        <p><strong>Policultivos:</strong> La gran variedad de especies sembradas (promedio de 27 por familia) representa un avance significativo hacia sistemas resilientes que naturalmente controlan plagas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comparacion">
+            <h2 class="section-title">Comparación y Síntesis</h2>
+            
+            <div class="card">
+                <h3>Puntos de Convergencia y Complementariedad</h3>
+                <div class="card-content">
+                    <p>El análisis de las técnicas agrícolas ancestrales y contemporáneas revela importantes puntos de convergencia y complementariedad:</p>
+                    
+                    <div class="image-placeholder">
+                        [Imagen: Síntesis de técnicas ancestrales y contemporáneas]
+                    </div>
+                    
+                    <h4>Principios Compartidos</h4>
+                    <ul>
+                        <li><strong>Sostenibilidad:</strong> Ambas tradiciones buscan trabajar en armonía con la naturaleza</li>
+                        <li><strong>Conocimiento del territorio:</strong> Adaptación a las condiciones específicas del altiplano Cundiboyacense</li>
+                        <li><strong>Diversidad:</strong> Valoración de la agrobiodiversidad como estrategia de resiliencia</li>
+                        <li><strong>Ciclicidad:</strong> Reconocimiento de los ciclos naturales como guía para las actividades agrícolas</li>
+                    </ul>
+                    
+                    <h4>Adaptaciones y Evoluciones</h4>
+                    <ul>
+                        <li>Las terrazas ancestrales se han adaptado incorporando materiales modernos</li>
+                        <li>El calendario lunar se mantiene vigente junto con nuevas tecnologías</li>
+                        <li>Los abonos orgánicos han diversificado sus fuentes según la disponibilidad actual</li>
+                        <li>El control de plagas combina preparados tradicionales con prácticas agroecológicas modernas</li>
+                    </ul>
+                    
+                    <h4>Lecciones para el Futuro</h4>
+                    <p>La experiencia del Resguardo de Fonquetá y Cerca de Piedra demuestra que es posible construir sistemas agrícolas sostenibles que integren lo mejor de ambas tradiciones, respetando la identidad cultural mientras se adaptan a los desafíos contemporáneos.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Comparación de Técnicas Agrícolas Ancestrales y Contemporáneas</p>
+        <p>Resguardo de Fonquetá y Cerca de Piedra - Comunidad Muisca</p>
+    </footer>
+</body>
+</html>

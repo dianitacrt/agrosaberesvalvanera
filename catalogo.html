@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de Plantas Medicinales</title>
+    <link rel="stylesheet" href="catalogo.css">
+</head>
+<body>
+   <nav class="menu">
+    <div class="menu-header">
+      <img src="logo.jpg" alt="Logo Agro Saberes Fonquetá" class="logo">
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+
+    <ul class="menu-items">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li class="submenu">
+       <a href="origenes.html" class="submenu-toggle active">Historia</a>
+        <ul class="submenu-list">
+          <li><a href="valvanera.html">Cerro de la Valvanera</a></li>
+          <li><a href="comunidad.html">Comunidad actual</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+       <a href="ancestrales.html" class="submenu-toggle active">Saberes Agrícolas</a>
+        <ul class="submenu-list">
+            <li><a href="contemporaneas.html">Técnicas contemporáneas</a></li>
+           <li><a href="comparativa.html">Comparaciones</a></li>
+      </ul>
+    </li>
+       <li><a href="catalogo.html" class="active">Plantas medicinales</a></li>
+      <li><a href="analisis.html" class="active">Análisis de datos</a></li>
+     <li><a href="juegos.html" class="active">Juegos interactivos</a></li>
+      <li><a href="multimedia.html" class="active">Multimedia</a></li>
+    
+    </ul>
+  </nav>
+<header>
+    <h1>🌿 Catálogo de Plantas Medicinales Muiscas 🌿</h1>
+    <p>Haz clic en una planta para ver su información completa.</p>
+</header>
+
+<section class="galeria">
+
+    <!-- ROMERO -->
+    <div class="tarjeta" onclick="mostrar('romero')">
+        <div class="imagen-planta"> <img src="romero.jfif" >    </div>
+        <h2>Romero</h2>
+    </div>
+
+    <!-- MANZANILLA AMARGA -->
+    <div class="tarjeta" onclick="mostrar('manzanilla')">
+        <div class="imagen-planta"><img src="manzanilla.jfif" ></div>
+        <h2>Manzanilla Amarga</h2>
+    </div>
+<!-- MANZANILLA DULCE -->
+    <div class="tarjeta" onclick="mostrar('manzanillad')">
+        <div class="imagen-planta"><img src="mdulce.jpg" ></div>
+        <h2>Manzanilla Dulce</h2>
+    </div>
+    <!-- Toronjil -->
+    <div class="tarjeta" onclick="mostrar('toronjil')">
+        <div class="imagen-planta"> <img src="toronjil.jfif">  </div>
+        <h2>Toronjil</h2>
+    </div>
+     <!-- Pimpinela -->
+    <div class="tarjeta" onclick="mostrar('pimpinela')">
+        <div class="imagen-planta"> <img src="pimpinela.jfif"> </div>
+        <h2>Pimpinela</h2>
+    </div>
+      <!-- Suelda -->
+    <div class="tarjeta" onclick="mostrar('suelda')">
+        <div class="imagen-planta"> <img src="suelda.jfif">  </div>
+        <h2>Suelda con suelda</h2>
+    </div>
+     <!-- altamisa -->
+    <div class="tarjeta" onclick="mostrar('altamisa')">
+        <div class="imagen-planta"> <img src="altamisa.jfif"> </div>
+        <h2>Altamisa</h2>
+    </div>
+    <!-- calendula -->
+    <div class="tarjeta" onclick="mostrar('calendula')">
+        <div class="imagen-planta"> <img src="calendula.jfif"> </div>
+        <h2>Caléndula</h2>
+    </div>
+     <!-- poleo -->
+    <div class="tarjeta" onclick="mostrar('poleo')">
+        <div class="imagen-planta"> <img src="poleo.jpg"> </div>
+        <h2>Poleo</h2>
+    </div>
+     <!-- HINOJO  -->
+    <div class="tarjeta" onclick="mostrar('HINOJO')">
+        <div class="imagen-planta"> <img src="hinojo.jfif"> </div>
+        <h2>Hinojo</h2>
+    </div>
+
+</section>
+
+<!-- MODALES DE INFORMACIÓN -->
+
+<!-- MODAL ROMERO -->
+<div id="romero" class="modal">
+    <div class="contenido planta-contenido">
+        <span class="cerrar" onclick="cerrar('romero')">&times;</span>
+
+        <h2>1. ROMERO <span class="icono">🌿</span></h2>
+
+        <div class="seccion">
+            <h3>Información Básica</h3>
+            <ul>
+                <li><strong>Nombre Común:</strong> Romero</li>
+                <li><strong>Nombre Científico:</strong> <em>Rosmarinus officinalis</em></li>
+                <li><strong>Familia:</strong> Lamiaceae</li>
+                <li><strong>Estado:</strong> <span class="etiqueta exito">Cultivado en huertas y jardines</span></li>
+            </ul>
+        </div>
+
+        <div class="seccion">
+            <h3>Identificación</h3>
+            <ul>
+                <li>🌱 <strong>Porte:</strong> Arbusto aromático perenne</li>
+                <li>🌿 <strong>Hojas:</strong> Pequeñas, alargadas color verde oscuro</li>
+                <li>🌸 <strong>Flores:</strong> Pequeñas, azules o violetas</li>
+                <li>📏 <strong>Altura:</strong> 0.5 – 1.5 m</li>
+                <li>👃 <strong>Aroma:</strong> Intenso, fresco y penetrante</li>
+            </ul>
+        </div>
+
+        <div class="seccion">
+            <h3>Usos Tradicionales – Medicinales 🩺</h3>
+            <ol>
+                <li><strong>Infecciones vaginales</strong><br> Baños de asiento con infusión concentrada.</li>
+                <li><strong>Eliminar hongos</strong><br> Lavados en zonas afectadas.</li>
+                <li><strong>Aromática digestiva</strong><br> Infusión suave después de comidas.</li>
+            </ol>
+        </div>
+
+        <div class="seccion">
+            <h3>Otros Usos</h3>
+            <ul>
+                <li>🍳 <strong>Culinario:</strong> Carnes, sopas y asados.</li>
+                <li>🧹 <strong>Limpieza espiritual:</strong> Baños energéticos y sahumerios.</li>
+            </ul>
+        </div>
+
+        <div class="seccion">
+            <h3>Preparaciones Tradicionales</h3>
+            <p><strong>Infusión:</strong> 2–3 ramas en 1 L de agua caliente, reposar 10 min.</p>
+            <p><strong>Baño medicinal:</strong> Poner un puñado grande en agua hervida.</p>
+        </div>
+
+        <div class="seccion">
+            <h3>Recomendaciones & Precauciones</h3>
+            <ul>
+                <li>✅ Ideal para inflamación y hongos</li>
+                <li>⚠️ <strong>No consumir durante el embarazo (interno)</strong></li>
+            </ul>
+        </div>
+
+        <div class="seccion">
+            <h3>Cultivo</h3>
+            <ul>
+                <li>🌱 Reproducción por esquejes</li>
+                <li>☀️ Prefiere pleno sol</li>
+                <li>💧 Riego moderado</li>
+                <li>🌿 Suelo bien drenado</li>
+            </ul>
+        </div>
+
+        <blockquote class="sabiduria">
+            "El romero es de las plantas que siempre se tiene en la casa. Sirve para muchas cosas. Para infecciones vaginales es muy bueno, y también para eliminar hongos."
+        </blockquote>
+    </div>
+</div>
+
+
+<!-- MODAL MANZANILLA -->
+<div id="manzanilla" class="modal">
+    <div class="contenido planta-contenido">
+        <span class="cerrar" onclick="cerrar('manzanilla')">&times;</span>
+
+        <h2>MANZANILLA AMARGA (Matricaria) 🌼</h2>
+
+        <div class="seccion">
+            <h3>Información Básica</h3>
+            <p><strong>Nombre Científico:</strong> Matricaria chamomilla / recutita<br>
+            <strong>Familia:</strong> Asteraceae</p>
+        </div>
+
+        <div class="seccion">
+            <h3>Identificación</h3>
+            <ul>
+                <li>🌿 Hierba anual aromática</li>
+                <li>🌼 Flores blancas con centro amarillo</li>
+                <li>👃 Aroma fuerte y amargo</li>
+            </ul>
+        </div>
+
+        <div class="seccion">
+            <h3>Usos Medicinales</h3>
+            <p>Dolores fuertes de estómago, cólicos y gastritis.</p>
+        </div>
+
+        <div class="seccion">
+            <h3>Preparación</h3>
+            <p>Infusión concentrada con flores secas o frescas.</p>
+        </div>
+
+        <div class="seccion">
+            <h3>Recomendaciones</h3>
+            <p>⚠️ Usar con moderación por su potencia.</p>
+        </div>
+
+        <blockquote class="sabiduria">
+            "La manzanilla amarga es para cuando el dolor es muy bravo. Es fuerte, pero cura."
+        </blockquote>
+    </div>
+</div>
+<!-- MODAL MANZANILLA D -->
+<div id="manzanillad" class="modal">
+    <div class="contenido planta-contenido">
+        <span class="cerrar" onclick="cerrar('manzanillad')">&times;</span>
+
+        <h2>MANZANILLA DULCE 🌸</h2>
+
+        <div class="seccion">
+            <h3>Información Básica</h3>
+            <p><strong>Nombre Científico:</strong> Chamaemelum nobile (Manzanilla romana<br>
+            <strong>Familia:</strong> Asteraceae</p>
+        </div>
+
+        <div class="seccion">
+            <h3>Identificación</h3>
+            <ul>
+                <li>🌿 Sabor: Más dulce y suave</li>
+                <li>🌼 Aroma: Más delicado</li>
+                <li>👃 Flores: Pueden ser más pequeñas</li>
+            </ul>
+        </div>
+
+        <div class="seccion">
+            <h3>Usos Medicinales</h3>
+            <p>Para el proceso de parto
+             <ul>
+             	<li>Preparación: Infusión para tomar e infusión para baño </li>
+                 <li>Uso interno: Ayuda a dilatar</li>
+                 <li>Uso externo: Baño para relajar</li>
+            	 <li>Uso interno: Ayuda a dilatar</li>
+                 <li> Uso externo: Baño para relajar</li>
+          </ul>
+
+          </p>
+          </div>
+            <div class="seccion">
+             <p>Dolores estomacales suaves
+             <ul>
+             	<li>Preparación: Infusión simple </li>
+                 <li>Problemas digestivos leves</li>
+                 
+          </ul>
+          </p>
+          </div>    
+        <div class="seccion">
+            <h3>Recomendaciones</h3>
+            <p>⚠️ Usar con moderación por su potencia.</p>
+        </div>
+
+        <blockquote class="sabiduria">
+            ""Tanto tomada como bañada es útil para el proceso de parto, e incluso es benéfica para sacar fríos de la matriz."
+"Es buena para baños para el bebé. También para ayudar a dilatar cuando se va dar a luz."
+"
+        </blockquote>
+    </div>
+</div>
+<!-- MODAL Toronjil -->
+<div id="toronjil" class="modal">
+    <div class="contenido planta-contenido">
+        <span class="cerrar" onclick="cerrar('toronjil')">&times;</span>
+
+        <h2>Toronjil 🍃</h2>
+
+        <div class="seccion">
+            <h3>Información Básica</h3>
+            <p><strong>Nombre Científico:</strong> Melissa officinalis<br>
+            <strong>Familia:</strong> Lamiaceae</p>
+        </div>
+
+        <div class="seccion">
+            <h3>Identificación</h3>
+            <ul>
+                <li>🌿 Porte: Hierba perenne aromática</li>
+                <li>🌼 Hojas: Ovaladas, dentadas, verde brillante</li>
+                <li>Altura: 30-80 cm</li>
+                <li>Aroma: Limón suave y agradable</li>
+            </ul>
+        </div>
+
+        <div class="seccion">
+            <h3>Usos Medicinales</h3>
+            <p> Bueno para el corazón
+             <ul>
+                <li>Preparación: Infusión regular </li>
+                <li>Uso: Tomar como aromática diaria</li>
+                <li>Beneficio: Calma palpitaciones, fortalece</li>
+                          </ul>
+
+          </p>
+          </div>
+            <div class="seccion">
+             <p>Dolor muscular
+             <ul>
+                <li>Preparación: Leche hervida con toronjil</li>
+                 <li>Uso: Tomar caliente antes de dormir</li>
+                 <li>Beneficio: Relaja músculos tensos</li>
+                 
+          </ul>
+          </p>
+          </div>  
+           <div class="seccion">
+           <h3>Preparación Tradicional</h3>
+              <p>Infusión básica:
+                <ul>
+                <li>Hojas frescas o secas</li>
+                <li>1 cucharada por taza</li>
+                <li>Agua hirviendo </li>
+                <li>Reposar 5-10 minutos</li>
+                <li>Endulzar con miel o panela</li>
+</p>
+        </div>  
+        <div class="seccion">
+            <h3>Recomendaciones</h3>
+            <p>⚠️ Puede dar sueño (no conducir después)</p>
+        </div>
+       
+
+        <blockquote class="sabiduria">
+            "Leche hervida con toronjil es útil para el dolor muscular y para el relajamiento. También es bueno para el corazón.
+
+        </blockquote>
+    </div>
+</div>
+<!-- MODAL pimpinela -->
+<div id="pimpinela" class="modal">
+    <div class="contenido planta-contenido">
+        <span class="cerrar" onclick="cerrar('pimpinela')">&times;</span>
+
+        <h2>Pimpinela❤️</h2>
+
+        <div class="seccion">
+            <h3>Información Básica</h3>
+            <p><strong>Nombre Científico:</strong> Pimpinella anisum<br>
+        </div>
+
+        <div class="seccion">
+            <h3>Buena para el corazón</h3>
+            <ul>
+                <li>Preparación: Infusión</li>
+                <li>Uso: Como aromática regulare</li>
+                <li>Beneficio: Problemas cardíacos, palpitaciones</li>
+           </ul>
+        </div>
+
+        <div class="seccion">
+            <h3>Preparación Tradicional</h3>
+            <p> Infusión
+             <ul>
+                <li>Hojas frescas o secas </li>
+                <li>1 cucharada por taza</li>
+                <li>Agua hirviendo</li>
+                <li>Reposar 10 minutos</li>
+                <li>Tomar como aromática</li>
+                          </ul>
+          </p>
+          </div>
+            
+    
+        <blockquote class="sabiduria">
+            "Buena para el corazón. Mejor que el toronjil.""
+
+        </blockquote>
+    </div>
+</div>
+<!-- MODAL suelda -->
+<div id="suelda" class="modal">
+    <div class="contenido planta-contenido">
+        <span class="cerrar" onclick="cerrar('suelda')">&times;</span>
+
+        <h2>Suelda con Suelda</h2>
+
+        <div class="seccion">
+            <h3>Información Básica</h3>
+            <p><strong>Nombre Científico:</strong> Pimpinella anisum<br>
+        </div>
+
+        <div class="seccion">
+            <h3>Buena para el corazón</h3>
+            <ul>
+                <li>Preparación: Infusión</li>
+                <li>Uso: Como aromática regulare</li>
+                <li>Beneficio: Problemas cardíacos, palpitaciones</li>
+           </ul>
+        </div>
+
+        <div class="seccion">
+            <h3>Preparación Tradicional</h3>
+            <p> Infusión
+             <ul>
+                <li>Hojas frescas o secas </li>
+                <li>1 cucharada por taza</li>
+                <li>Agua hirviendo</li>
+                <li>Reposar 10 minutos</li>
+                <li>Tomar como aromática</li>
+                          </ul>
+          </p>
+          </div>
+            
+    
+        <blockquote class="sabiduria">
+            "Buena para el corazón. Mejor que el toronjil.""
+
+        </blockquote>
+    </div>
+</div>
+<!-- MODAL altamisa -->
+<div id="altamisa" class="modal">
+    <div class="contenido planta-contenido">
+        <span class="cerrar" onclick="cerrar('altamisa')">&times;</span>
+
+        <h2>Altamisa</h2>
+
+        <div class="seccion">
+            <h3>Información Básica</h3>
+            <p><strong>Nombre Científico:</strong> Ambrosia peruviana o Tanacetum parthenium<br>
+        </div>
+
+        <div class="seccion">
+            <h3>Buena para el corazón</h3>
+            <ul>
+                <li>Preparación: Infusión</li>
+                <li>Uso: Como aromática regulare</li>
+                <li>Beneficio: Problemas cardíacos, palpitaciones</li>
+           </ul>
+        </div>
+
+        <div class="seccion">
+            <h3>Preparación Tradicional</h3>
+            <p> Baños cálidos medicinales <br>
+                Para la buena suerte <br>
+                Preparación
+             <ul>
+                <li>Un puñado grande de altamisa </li>
+                <li>3-4 litros de agua</li>
+                <li>Hervir 15 minutos</li>
+                <li>Dejar enfriar a temperatura tolerable</li>
+                <li>Añadir al agua del baño</li>
+                <li>Bañarse con fe</li>
+                          </ul>
+          </p>
+          </div>
+            
+    
+        <blockquote class="sabiduria">
+            "Utilizada para baños cálidos, ayuda a la buena suerte."
+
+        </blockquote>
+    </div>
+</div>
+<!-- MODAL calendula -->
+<div id="calendula" class="modal">
+    <div class="contenido planta-contenido">
+        <span class="cerrar" onclick="cerrar('calendula')">&times;</span>
+
+        <h2>Caléndula</h2>
+
+        <div class="seccion">
+            <h3>Información Básica</h3>
+            <p><strong>Nombre Científico:</strong> Calendula officinalis<br>
+        </div>
+
+        <div class="seccion">
+            <h3>Usos tradicionales</h3>
+            <ul>
+                <li> Para golpes (uso externo)</li>
+                <li>Para la úlcera (uso interno)</li>
+                
+           </ul>
+        </div>
+
+        <div class="seccion">
+            <h3>Preparación Tradicional para golpes</h3>
+             <ul>
+                <li>Flores de caléndula (frescas o secas) </li>
+                <li>Hervir en agua</li>
+                <li>Dejar enfriar</li>
+                <li>Aplicar compresas tibias</li>
+                <li>O bañar la zona afectada</li>
+                
+                          </ul>
+          </p>
+          <h3>Preparación Tradicional para úlcera</h3>
+             <ul>
+                <li>Flores de caléndula </li>
+                <li>1 taza de leche</li>
+                <li>Hervir juntos</li>
+                <li>Dejar reposar</li>
+                <li>Colar y tomar tibio</li>
+                <li>Preferiblemente en ayunas</li>
+                
+                          </ul>
+          </div>
+            
+    
+        <blockquote class="sabiduria">
+            "La flor de caléndula en baños, es medicinal para los golpes. También la flor hervida en leche para curar la úlcera."
+
+        </blockquote>
+    </div>
+</div>
+<!-- MODAL poleo -->
+<div id="poleo" class="modal">
+    <div class="contenido planta-contenido">
+        <span class="cerrar" onclick="cerrar('poleo')">&times;</span>
+
+        <h2>Poleo</h2>
+
+        <div class="seccion">
+            <h3>Información Básica</h3>
+            <p><strong>Nombre Científico:</strong> Mentha pulegiums<br>
+        </div>
+
+        <div class="seccion">
+            <h3>Usos tradicionales</h3>
+            <ul>
+                <li> Para golpes (uso externo)</li>
+                <li>Para la úlcera (uso interno)</li>
+                
+           </ul>
+        </div>
+
+        <div class="seccion">
+            <h3>Preparación Tradicional para tratar la gripe</h3>
+             <ul>
+                <li>Preparación: Infusión (aromática) </li>
+                <li>Uso: Tomar caliente, varias veces al día</li>
+                <li>Beneficio: Descongestionante, expectorante</li>
+                
+          </p>
+          <h3>Preparación Tradicional para úlcera</h3>
+             <ul>
+                <li>Hojas de poleo </li>
+                <li>Agua hirviendo</li>
+                <li>Reposar 5 minutos</li>
+                <li>Endulzar con miel o panela</li>
+                <li>Tomar caliente</li>
+            
+                          </ul>
+          </div>
+            
+    
+        <blockquote class="sabiduria">
+            "Papayuela, flor de borraja y poleo para tratar la gripe y subir defensas."
+
+        </blockquote>
+    </div>
+</div>
+
+<!-- MODAL HINOJO -->
+<div id="HINOJO" class="modal">
+    <div class="contenido planta-contenido">
+        <span class="cerrar" onclick="cerrar('HINOJO')">&times;</span>
+
+        <h2>HINOJO</h2>
+
+        <div class="seccion">
+            <h3>Información Básica</h3>
+            <p><strong>Nombre Científico:</strong> Foeniculum vulgare<br>
+        </div>
+
+        <div class="seccion">
+            <h3>Usos tradicionales</h3>
+            <ul>
+                <li>  Para la bajada de leche materna</li>
+                <li>Baños para bebés</li>
+                <li> Para el colon</li>
+                
+           </ul>
+        </div>
+
+        <div class="seccion">
+            <h3>Preparación Tradicional para bebés (baño):</h3>
+             <ul>
+                <li>Infusión muy suave </li>
+                <li>Temperatura tibia</li>
+                <li>Bañar especialmente en la noche</li>
+                
+          </p>
+          <h3>Preparación Tradicional para lactancia</h3>
+             <ul>
+                <li>Agua de panela caliente </li>
+                <li>Leche</li>
+                <li>Semillas o hojas de hinojo</li>
+                <li>Hervir suavemente</li>
+                <li>Tomar 2-3 veces al día</li>
+                         
+          </div>
+             <h3>Preparación Tradicional para digestión:</h3>
+             <ul>
+                <li>Hinojo + menta </li>
+                <li>Infusión después de comidas</li>
+            
+        <blockquote class="sabiduria">
+            "En agua de panela con leche ayuda a la bajada de leche materna."
+"En baños útil para mejorar el sueño de los bebés."
+"Menta e hinojo en aromática son buenos para tratar el colon. Además, alivia la indigestión y la distensión."
+
+        </blockquote>
+    </div>
+</div>
+ <footer>
+    <p>🌿 Proyecto STEM - Institución Educativa Fonquetá🌿</p>
+     <img src="footer.jpeg">
+  </footer>
+<script>
+function mostrar(id) {
+    document.getElementById(id).style.display = "block";
+}
+function cerrar(id) {
+    document.getElementById(id).style.display = "none";
+}
+</script>
+
+</body>
+</html>

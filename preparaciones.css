@@ -1,0 +1,156 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f8ec;
+  margin: 0;
+  color: #333;
+}
+
+/* Menú */
+.menu {
+  background-color: #3b5e2b;
+  color: white;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 4px;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #ffeb7b;
+}
+
+/* Submenú */
+.submenu {
+  position: relative;
+}
+.submenu-list {
+  display: none;
+  position: absolute;
+  background-color: #4f7034;
+  border-radius: 8px;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 10px 0;
+}
+.submenu:hover .submenu-list {
+  display: block;
+}
+.submenu-list li {
+  padding: 8px 20px;
+}
+.submenu-list a {
+  color: #fff;
+}
+.submenu-list a:hover {
+  background-color: #5f8a3d;
+}
+/* === CONTENEDOR GENERAL === */
+section.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+.titulo{
+    text-align: center;
+}
+
+
+/* === TARJETAS === */
+.card {
+    background: #fdf7ef;
+    padding: 20px;
+    border: 2px solid #c49a72;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(112, 73, 45, 0.22);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 14px rgba(112, 73, 45, 0.28);
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #3a2a1c;
+}
+
+
+/* === DETALLES INTERACTIVOS === */
+details summary {
+    font-weight: 600;
+    color: #6a462a;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+details summary::before {
+    content: "▶";
+    font-size: 0.9rem;
+    transition: transform 0.3s;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+details p, details ol, details ul {
+    margin-top: 12px;
+    line-height: 1.55;
+    color: #4a3b2f;
+    font-size: 0.98rem;
+}
+
+
+/* === ESPACIO PARA IMÁGENES === */
+.imagen-espacio {
+    width: 100%;
+    height: 180px;
+    background: #f2e9df;
+    border: 2px dashed #b08b68;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #86674b;
+    font-style: italic;
+}
+

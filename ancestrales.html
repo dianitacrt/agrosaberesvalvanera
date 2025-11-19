@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sabiduría Agrícola Ancestral Muisca</title>
+  <link rel="stylesheet" href="ancestrales.css">
+</head>
+
+<body>
+ <nav class="menu">
+    <div class="menu-header">
+      <img src="logo.jpg" alt="Logo Agro Saberes Fonquetá" class="logo">
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+
+    <ul class="menu-items">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li class="submenu">
+       <a href="origenes.html" class="submenu-toggle active">Historia</a>
+        <ul class="submenu-list">
+          <li><a href="valvanera.html">Cerro de la Valvanera</a></li>
+          <li><a href="comunidad.html">Comunidad actual</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+       <a href="ancestrales.html" class="submenu-toggle active">Saberes Agrícolas</a>
+        <ul class="submenu-list">
+            <li><a href="contemporaneas.html">Técnicas contemporáneas</a></li>
+           <li><a href="comparativa.html">Comparaciones</a></li>
+      </ul>
+    </li>
+       <li><a href="catalogo.html" class="active">Plantas medicinales</a></li>
+      <li><a href="analisis.html" class="active">Análisis de datos</a></li>
+     <li><a href="juegos.html" class="active">Juegos interactivos</a></li>
+      <li><a href="multimedia.html" class="active">Multimedia</a></li>
+    
+    </ul>
+  </nav>
+
+
+<!-- HERO -->
+<header class="hero fade-in">
+  <h1>Sabiduría Agrícola Ancestral Muisca</h1>
+  <h2>Técnicas milenarias que aún alimentan a nuestra comunidad</h2>
+</header>
+
+<section class="contenido fade-in">
+
+<p class="introduccion">
+Nuestros ancestros desarrollaron técnicas agrícolas sofisticadas que permitieron vivir
+en armonía con la Madre Tierra durante siglos. Estos saberes se mantienen vivos hoy.
+</p>
+
+<div class="recuadro">
+🌾 <center><b>Conocimiento Vivo:</b> Estas prácticas son parte de nuestra identidad cultural.</center>
+</div>
+
+<!-- SECCIÓN: TERAZAS -->
+<h3>🌄 Las Terrazas Muiscas</h3>
+<h4>Cultivando en las laderas de la montaña</h4>
+
+<div class="bloque">
+  <div class="texto">
+    <p>Las terrazas son escalones agrícolas construidos en laderas inclinadas para convertir terrenos difíciles en espacios productivos.</p>
+
+    <ul>
+      <li><b>Materiales tradicionales:</b> piedra, madera, tierra compactada, raíces que sujetan el terreno.</li>
+      <li><b>Funciones:</b> evitar la erosión, mantener la humedad, ampliar el área de cultivo, crear microclimas.</li>
+    </ul>
+    <p class="cita">"Aquí nos toca hacer terrazas por lo pendiente del terreno"</p>
+  </div>
+
+  <div class="imagen1">
+    <p> <img src="terrazas.jpg">  </p>
+  </div>
+</div>
+
+<!-- SECCIÓN: CAMELLONES -->
+<h3>🌊 Los Camellones</h3>
+<h4>Cultivando en zonas húmedas e inundables</h4>
+
+<div class="bloque">
+  <div class="texto">
+    <p>Los camellones son montículos elevados rodeados de canales que permiten cultivar en zonas inundables.</p>
+
+    <ul>
+      <li>Mantienen las raíces secas</li>
+      <li>Permiten almacenar agua en los canales</li>
+      <li>Los canales podían criar peces 🐟</li>
+    </ul>
+  </div>
+
+  <div class="imagen1">
+    <p> <img src="camellones.jpg">   </p>
+  </div>
+</div>
+
+<!-- SECCIÓN: TIEMPO MUISCA -->
+<h3>⏳ El Tiempo Muisca</h3>
+<p class="recuadro-filosofico">
+"Todo es un ciclo que se repite: la vida, la luna, la siembra y la cosecha."
+</p>
+
+<!-- SECCIÓN: CALENDARIO LUNAR -->
+<h3>🌙 El Calendario Lunar</h3>
+
+<table class="tabla-lunar">
+  <tr><th>Fase</th><th>Actividades Agrícolas</th></tr>
+  <tr><td>Luna Nueva</td><td>Preparar tierra y limpiar terreno</td></tr>
+  <tr><td>Luna Creciente</td><td>Sembrar hortalizas y frutos</td></tr>
+  <tr><td>Luna Llena</td><td>Recolección y ceremonias</td></tr>
+  <tr><td>Luna Menguante</td><td>Sembrar raíces y podar</td></tr>
+</table>
+
+<!-- SECCIÓN: ESTACIONES -->
+<h3>☀️ Calendario Solar y Estaciones</h3>
+
+<div class="bloque">
+  <div class="texto">
+    <p><b>Época de Lluvias:</b> Abril-Mayo / Octubre-Noviembre → ideal para siembra.</p>
+    <p><b>Época Seca:</b> Diciembre-Marzo / Junio-Septiembre → ideal para cosecha y secado.</p>
+  </div>
+
+  <div class="imagen1">
+    <p> <img src="calendario.jpg">  </p>
+  </div>
+</div>
+ <footer>
+    <p>🌿 Proyecto STEM - Institución Educativa Fonquetá🌿</p>
+     <img src="footer.jpeg">
+  </footer>
+</section>
+
+<!-- SCRIPT -->
+<script>
+document.querySelector(".menu-toggle").onclick = () => {
+  document.querySelector(".menu-items").classList.toggle("show");
+};
+</script>
+
+</body>
+</html>

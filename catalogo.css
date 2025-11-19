@@ -1,0 +1,233 @@
+/* Menú */
+.menu {
+  background-color: #3b5e2b;
+  color: white;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+footer img{
+  width:100% ;
+  height:80px ;
+  background-image:100%;
+}
+.menu-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 4px;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #ffeb7b;
+}
+
+/* Submenú */
+.submenu {
+  position: relative;
+}
+.submenu-list {
+  display: none;
+  position: absolute;
+  background-color: #4f7034;
+  border-radius: 8px;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 10px 0;
+}
+.submenu:hover .submenu-list {
+  display: block;
+}
+.submenu-list li {
+  padding: 8px 20px;
+}
+.submenu-list a {
+  color: #fff;
+}
+.submenu-list a:hover {
+  background-color: #5f8a3d;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f7f9f1;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background: #9cbc8c;
+    color: white;
+    padding: 20px;
+    border-bottom: 4px solid #6f8e63;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    width: 220px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.imagen-planta {
+    height: 150px;
+    background: #e1ecd6;
+    border-radius: 14px 14px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7a63;
+    font-size: 16px;
+}
+.imagen-planta img {
+    width: 100%;
+    height: 200px; /* Ajusta este valor según el tamaño que quieras */
+    object-fit: cover; /* Recorta la imagen sin deformarla */
+    border-radius: 12px 12px 0 0; /* Redondea solo arriba */
+    display: block;
+    object-fit: cover;
+width: 100%;
+height: 100%;
+border-radius: 12px 12px 0 0;
+}
+
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.contenido {
+    background: #ffffff;
+    margin: auto;
+    width: 65%;
+    padding: 25px;
+    border-radius: 18px;
+    max-height: 85%;
+    overflow-y: scroll;
+}
+
+.cerrar {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+.planta-contenido h2 {
+    font-size: 28px;
+    color: #4a6b45;
+    margin-bottom: 10px;
+}
+
+.icono {
+    font-size: 26px;
+}
+
+.seccion {
+    background: #f4f8ef;
+    padding: 14px 18px;
+    margin: 14px 0;
+    border-left: 6px solid #96b38a;
+    border-radius: 8px;
+}
+
+.seccion h3 {
+    margin: 0 0 8px 0;
+    color: #355b32;
+}
+
+.etiqueta.exito {
+    background: #b9d8a6;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.sabiduria {
+    font-style: italic;
+    background: #ecefe7;
+    border-left: 6px solid #7a9b6c;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 18px;
+}
+/* Animación Suave Tipo Acuarela */
+.fade-section {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+/* Cuando el elemento entra en pantalla */
+.fade-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animación para el título principal */
+.planta-contenido h2 {
+    animation: fadeInSlide 1.2s ease-out;
+}
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+footer {
+  background-color: #3b5e2b;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+

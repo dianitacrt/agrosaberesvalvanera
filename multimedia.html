@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Multimedia</title>
+  <link rel="stylesheet" href="multimedia.css">
+</head>
+
+<body >
+
+<nav class="menu">
+  
+    <div class="menu-header">
+      <img src="logo.jpg" alt="Logo Agro Saberes Fonquetá" class="logo">
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+
+    <ul class="menu-items">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li class="submenu">
+       <a href="origenes.html" class="submenu-toggle active">Historia</a>
+        <ul class="submenu-list">
+          <li><a href="valvanera.html">Cerro de la Valvanera</a></li>
+          <li><a href="comunidad.html">Comunidad actual</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+       <a href="ancestrales.html" class="submenu-toggle active">Saberes Agrícolas</a>
+        <ul class="submenu-list">
+            <li><a href="contemporaneas.html">Técnicas contemporáneas</a></li>
+           <li><a href="comparativa.html">Comparaciones</a></li>
+      </ul>
+    </li>
+        <li class="submenu">
+       <a href="catalogo.html" class="submenu-toggle active">Plantas Medicinales</a>
+      
+      </li>
+      <li class="submenu">
+       <a href="analisis.html" class="submenu-toggle active">Análisis de datos</a>
+      </li>
+<li class="submenu">
+     <a href="juegos.html" class="submenu-toggle active">Juegos interactivos</a>
+      </li>
+      <li class="submenu">
+       <a href="Multimedia.html" class="submenu-toggle active">Multimedia</a>
+           </li>
+    
+    </ul>
+  </nav>
+  <header class="titulo">
+  <h1 >Galeria </h1>
+  </header>
+
+  <div class="slider">
+   <button class="prev">&#10094;</button>
+
+  <div class="slides">
+    <div class="slide"><img src="iglesia.jpeg"></div>
+    <div class="slide"><img src="valvanera1.jpg"></div>
+    <div class="slide"><img src="gobernadora.jfif"></div>
+    <div class="slide"><img src="valvanera.jfif"></div>
+    <div class="slide"><img src="vista.jpeg"></div>
+    <div class="slide"><img src="chicos.jpeg"></div>
+<div class="slide"><img src="chicos1.jpeg"></div>
+<div class="slide"><img src="chicos2.jpeg"></div>
+<div class="slide"><img src="chicos3.jpeg"></div>
+<div class="slide"><img src="chicos4.jpeg"></div>
+<div class="slide"><img src="chicos5.jpeg"></div>
+<div class="slide"><img src="chicos6.jpeg"></div>
+  </div>
+
+  <button class="next">&#10095;</button>
+</div>
+<div class="bloque">
+  <h3> Videos </h3>
+ <div class="slider">
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/d5KA1-Mqh5A?si=PoOML1ouIR5f0ZGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video"> <iframe width="560" height="315" src="https://www.youtube.com/embed/ag0jl8epybM?si=vsRSfq7WpudPFbkV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video"> <iframe width="560" height="315" src="https://www.youtube.com/embed/wpeYHyfogzk?si=ASDveSU3j8g3G5UN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+ </div>
+</div>
+
+  <footer>
+    <p>🌿 Proyecto STEM - Institución Educativa Fonquetá🌿</p>
+    <img src="footer.jpeg">
+  </footer>
+ <script>
+  let index = 0;
+  const slides = document.querySelector('.slides');
+  const total = document.querySelectorAll('.slide').length;
+document.querySelector('.prev').onclick = () => {
+    index = (index - 1 + total) % total;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  };
+  document.querySelector('.next').onclick = () => {
+    index = (index + 1) % total;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  };
+
+  
+</script>
+</html

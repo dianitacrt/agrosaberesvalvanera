@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nuestra Comunidad Hoy</title>
+  <link rel="stylesheet" href="comunidad.css">
+</head>
+
+<body>
+
+  <nav class="menu">
+    <div class="menu-header">
+      <img src="logo.jpg" alt="Logo Agro Saberes Fonquetá" class="logo">
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+
+    <ul class="menu-items">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li class="submenu">
+       <a href="origenes.html" class="submenu-toggle active">Historia</a>
+        <ul class="submenu-list">
+          <li><a href="valvanera.html">Cerro de la Valvanera</a></li>
+          <li><a href="comunidad.html">Comunidad actual</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+       <a href="ancestrales.html" class="submenu-toggle active">Saberes Agrícolas</a>
+        <ul class="submenu-list">
+            <li><a href="contemporaneas.html">Técnicas contemporáneas</a></li>
+           <li><a href="comparativa.html">Comparaciones</a></li>
+      </ul>
+    </li>
+       <li><a href="catalogo.html" class="active">Plantas medicinales</a></li>
+      <li><a href="analisis.html" class="active">Análisis de datos</a></li>
+     <li><a href="juegos.html" class="active">Juegos interactivos</a></li>
+      <li><a href="multimedia.html" class="active">Multimedia</a></li>
+    
+    </ul>
+  </nav>
+
+<!-- 🌄 ENCABEZADO -->
+<header class="hero fade-in">
+  <h1>Nuestra Comunidad Hoy</h1>
+  <h2>Resistencia, adaptación y pervivencia en el siglo XXI</h2>
+</header>
+
+
+<section class="contenido fade-in">
+
+<!-- SECCIÓN 1 -->
+<h3>🏛️ Reconocimiento Oficial</h3>
+
+<div class="bloque">
+  <div class="texto">
+    <p><b>Resguardo Indígena Muisca de Fonquetá y Cerca de Piedra</b></p>
+    <ul>
+      <li><b>Fecha de Reconocimiento:</b> 24 de mayo de 2013</li>
+      <li><b>Acto Administrativo:</b> Acuerdo 315 de 2013 - INCODER</li>
+      <li><b>Ubicación:</b> Municipio de Chía, Cundinamarca</li>
+      <li><b>Extensión Actual:</b> Aproximadamente 200 hectáreas</li>
+    </ul>
+
+    <p class="cita">
+      "Este reconocimiento es el resultado de siglos de resistencia. 
+      Desde 1911, cuando nuestros líderes Pioquinto Cojo y Enrique Ramírez 
+      ganaron el litigio que permitió mantener las tierras como comunales, 
+      hasta 2013, nuestro pueblo nunca dejó de luchar por el territorio ancestral."
+    </p>
+  </div>
+
+  <div class="imagen montana">
+    <p> <img src="reconocimiento.png">  </p>
+  </div>
+</div>
+
+
+<!-- SECCIÓN 2 -->
+<h3>👥 Nuestra Población</h3>
+
+<div class="bloque">
+  <div class="texto">
+    <p><b>Censo Nacional 2018 — DANE</b></p>
+    <ul>
+      <li><b>Población Total:</b> 1,399 personas</li>
+      <li><b>Pueblo Muisca:</b> 846 personas (60.5%)</li>
+      <li><b>Población sin reconocimiento étnico:</b> 553 personas (39.5%)</li>
+    </ul>
+
+    <p><b>Distribución:</b></p>
+    <ul>
+      <li>427 mujeres (50.5%)</li>
+      <li>419 hombres (49.5%)</li>
+    </ul>
+  </div>
+
+  <div class="imagen espiritu">
+    <p> <img src="censo.jfif">  </p>
+  </div>
+</div>
+
+</section>
+ <footer>
+    <p>🌿 Proyecto STEM - Institución Educativa Fonquetá🌿</p>
+     <img src="footer.jpeg">
+  </footer>
+
+<!-- SCRIPT DEL MENÚ -->
+<script>
+document.querySelector(".menu-toggle").addEventListener("click", () => {
+  document.querySelector(".menu-items").classList.toggle("show");
+});
+
+document.querySelectorAll(".submenu-toggle").forEach(btn => {
+  btn.addEventListener("click", e => {
+    e.preventDefault();
+    btn.parentElement.classList.toggle("active");
+  });
+});
+</script>
+
+</body>
+</html>

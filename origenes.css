@@ -1,0 +1,199 @@
+/* 🌿 MENÚ */
+/* Menú */
+.menu {
+  background-color: #3b5e2b;
+  color: white;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 4px;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #ffeb7b;
+}
+
+/* Submenú */
+.submenu {
+  position: relative;
+}
+.submenu-list {
+  display: none;
+  position: absolute;
+  background-color: #4f7034;
+  border-radius: 8px;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 10px 0;
+}
+.submenu:hover .submenu-list {
+  display: block;
+}
+.submenu-list li {
+  padding: 8px 20px;
+}
+.submenu-list a {
+  color: #fff;
+}
+.submenu-list a:hover {
+  background-color: #5f8a3d;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #fffdf5;
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+}
+footer img{
+  width:100% ;
+  height:80px ;
+  background-image:100%;
+}
+.encabezado {
+  background: linear-gradient(135deg, #b7e5a3, #fef7a5);
+  text-align: center;
+  padding: 50px 20px;
+  color: #25421e;
+}
+
+.bloque {
+  padding: 45px 25px;
+  text-align: center;
+}
+
+.color1 { background-color: #f3fce9; }
+.color2 { background-color: #fff6e6; }
+
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.texto { flex: 1 1 55%; text-align: left; }
+.espacio-imagen {
+  flex: 1 1 35%;
+  border: 2px dashed #8fb879;
+  border-radius: 12px;
+  padding: 35px;
+  background-color: #fafcf6;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tarjeta {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.tabla {
+  margin: auto;
+  border-collapse: collapse;
+  width: 70%;
+  font-size: 1em;
+}
+
+.tabla th, .tabla td {
+  padding: 10px;
+  border: 1px solid #bbb;
+}
+
+blockquote {
+  font-style: italic;
+  background: #f7faed;
+  padding: 10px 15px;
+  border-left: 4px solid #9fc98e;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+footer {
+  background: #445d2a;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .contenido, .grid { flex-direction: column; }
+  .espacio-imagen { width: 100%; }
+}
+/* Ajuste universal de imágenes dentro de tarjetas */
+.espacio-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* Recorta la imagen sin deformarla */
+  object-position: center; /* Enfoca la parte más relevante */
+  display: block;
+  border-radius: 10px;
+}
+
+/* Define un alto uniforme para los contenedores */
+.espacio-imagen {
+  height: 240px;  
+     /* Ajusta si se quiere más grande o más pequeño */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;   /* Evita que la imagen se salga */
+  padding: 0 !important;
+  border: 2px dashed #8fb879;
+  background-color: #fafcf6;
+}
+.territorio{
+  height: 440px;  
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;   /* Evita que la imagen se salga */
+  padding: 0 !important;
+  border: 2px dashed #8fb879;
+  background-color: #fafcf6;
+}
