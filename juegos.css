@@ -185,3 +185,36 @@ footer {
 .submenu-list a:hover {
   background-color: #5f8a3d;
 }
+@media(max-width:768px){
+  .menu-items { display: none; flex-direction: column; }
+  .menu-items.show { display: flex; }
+  .menu-toggle { display: block; color:white; font-size: 2em; background:none; border:none; }
+  .bloque { flex-direction: column; }
+  .texto, .imagen { width: 100%; }
+}
+.imagen1 { 
+  width: 400px;
+  background: #e3efd8;
+  border: 2px dashed #3a5b2e;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+   }
+   .imagen1 img {
+  width: 380px;
+  background: #e3efd8;
+  border: 2px dashed #3a5b2e;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  background-color: #3b5e2b;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
